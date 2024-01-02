@@ -1,0 +1,703 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Questrial&display=swap'); */
+
+
+
+
+
+
+:root {
+    --primary-font: 'Inter', sans-serif;
+    --heading-font: 'Montserrat', sans-serif;
+    --basic-font:'Questrial', sans-serif;
+    --primary-color: #042f73;
+    --secondary-color: #086276;
+    --accent-color: #e63d3b;
+    
+  }
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--primary-font);
+    background-color: white;
+    background-color: transparent;
+    /* color: white; */
+}
+body{
+    overflow-x: hidden;
+}
+
+.notice{
+    background-color: var(--primary-color);
+    display: flex;
+    width: 100vw;
+    justify-content: center;
+    padding: 0.5rem 0;
+}
+.notice .content{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 90%;
+    max-width: 1440px;
+}
+
+
+.contact-left{
+    display: flex;
+    gap: 2rem;
+}
+
+header{
+    display: flex;
+    justify-content: center;
+    background-color: var(--primary-color);
+
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+header .content{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 90%;
+    max-width: 1440px;
+    padding: 1rem 0;
+}
+
+.content{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 90%;
+    max-width: 1440px;
+    padding: 1rem 0;
+    /* color: white; */
+}
+
+.nav-links{
+    display: flex;
+    gap: 1rem;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.title{
+    font-size: 3rem;
+}
+
+.hero{
+    padding: 10rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* height: 100vh; */
+    background-color: var(--primary-color);
+}
+
+
+.outline-btn{
+    border: 2px solid  #224591;
+    padding: 1rem 2rem;
+    border-radius: 30px;
+     color: white;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    font-size: 18px;
+    background-color: #213f80;
+    
+}
+
+.hero-btns{
+    display: flex;
+    gap: 1rem;
+}
+
+.hero h1{
+    font-size: 4rem;
+}
+
+.hero-content-section{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.hero .content{
+    gap :3rem;
+}
+
+.hero-subtitle{
+    /* font-size: 2rem; */
+    font-weight: 300;
+    opacity: 0.8;
+    letter-spacing: 2px;
+}
+
+.cards-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    position: relative;
+    justify-content: center;
+    /* padding: 4rem 0; */
+}
+.cards-container .content {
+    gap: 2rem;
+    position: absolute;
+    top: -100px;
+    
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    justify-content: center;
+    padding: 4rem 4rem;
+    flex: 1;
+    background-color: var(--primary-color);
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    transition: all 0.3s ease;
+}
+
+.card:hover{
+    background-color: var(--secondary-color);
+    color: white;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.card i{
+    height: 48px;
+    width: 48px;
+}
+
+.card h3{
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+
+.about-us {
+    margin-top: 10rem;
+    display: flex;
+    justify-content: center;
+}
+
+.about-us .content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 3rem;
+}
+
+.about-us .content .title-div{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+.about-us-title{
+    font-size: 3rem;
+}
+
+.about-us-content{
+    /* height: 600px; */
+    margin-top: 4rem;
+    display: flex;
+    justify-content: space-between;
+    gap: 3rem;
+    text-align: left;
+}
+.list-container{
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+}
+.list-item img{
+    height: 24px;
+    width: 24px;
+}
+.list-item{
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+.second-about-us-section{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    flex: 1;
+}
+
+.first-about-us-section{
+    flex:1;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.first-about-us-section img{
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+}
+
+.second-about-us-section .big-image{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.second-about-us-section{
+    display: flex;
+    gap: 2rem;
+    height: 500px;
+    flex-direction: column;
+}
+
+.about-us-company{
+    margin: 4rem 0;
+    display: flex;
+    width: 100%;
+    gap: 2rem;
+    justify-content: space-between;
+    
+}
+.about-us-company img{
+    height: 60px;
+}
+
+.about-us-stats-contaainer{
+    display: flex;
+    gap: 10rem;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.about-us-stats-item-container{
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.about-us-stats-item{
+    font-size: 18px;
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    padding-bottom: 1rem;
+    border-bottom: 2px solid black;
+}
+
+.about-us-stats-contaainer .number{
+    font-size: 3rem;
+    font-weight: 700;
+    color: var(--primary-color);
+}
+
+
+.call-to-action-video{
+    margin: 4rem 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    height: 600px;
+    border-radius: 30px;
+
+}
+
+ /* .call-to-action-video .content{
+    position: relative;
+    overflow: hidden;
+    border-radius: 30px;
+    width: 100%;
+    height: 600px;
+    padding: 0;
+    background-color: var(--primary-color);
+    opacity: 0.5; 
+}  */
+
+/* .call-to-action-video .content img{
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 0;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 30px;
+    opacity: 0.6;
+} */
+
+.call-to{
+    display:flex;
+    justify-content: center;
+    border-radius: 30px;
+}
+.services{
+    background-color: whitesmoke;
+}
+.services div div div{
+    height: 300px;
+    width: 300px;
+    background-color:white;
+    margin-bottom: 20px; /* Adjust margin as needed */
+    display:inline-block;
+    text-align: center;
+
+    
+    /* display:flex; 
+    justify-content: center;
+    align-items: center;
+    border-radius: 25px; */
+} 
+.services div h2{
+    margin-bottom: 2rem;
+}
+.services div p{
+    margin-bottom: 2rem;
+}
+.box div div{
+display: flex;
+justify-content: center;
+align-items: center;
+}
+.services div div{
+    margin-left:60px;
+}
+.testimonials div {
+    margin-top: 3rem;
+}
+.testimonials div p{
+    margin-top: 1.5rem;
+    margin-bottom: 2rem;
+}
+.testimonials{
+    background-color:#fefefe;
+}
+.b3 > div {
+    width: 320px; /* Set your desired width */
+    height:300px; /* Set your desired height */
+    background-color:#fefefe; /* Just for visualization, you can remove this */
+    border-width: 2px;
+    border-radius: 5px;
+    box-shadow: 5px 3px 15px #dcdcdc; /* Set box shadow color */
+    display:flex
+
+}
+.b3{
+    display: flex;
+    justify-content: space-evenly;
+}
+.b3 > div img {
+    width:100px; 
+    border-radius: 50%; 
+    margin-top: 30px;
+    margin-left: 25px;
+    margin-right: 10px;
+} 
+/* .b3 > div .text-container {
+    
+    height:15vh;
+    width:6rem;
+    display: flex;
+    flex-direction: column;
+    
+    align-items: center;
+    justify-content: start;
+    font-size: smaller;
+    margin-left: 0px;
+} */
+.b3 > div .text-container div{
+    margin-top:0px;
+    margin-left:0px;
+}
+.star i {
+    color: #fcce22;
+    font-size: 15px;
+}
+.testimonials h2 {
+    text-align: center;
+}
+.testimonials p {
+    text-align: center;
+}
+.portfolio{
+    background-color: whitesmoke;
+    margin-top: 4rem;
+}
+.portfolio h1{
+    text-align: center;
+    padding-top: 3rem;
+    font-size: 40px;
+}
+.portfolio p{
+    text-align: center;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    color: grey;
+}
+.anc{
+    display:flex;
+    justify-content: center;
+    padding-bottom: 1rem;
+}
+.anc a{
+    color: brown;
+    margin-right: 20px;
+}
+.branding{
+    display: flex;
+    justify-content: center;
+}
+.branding div{
+    margin-right: 25px;
+    height:350px;
+    background-color: white;
+    border-radius: 1.5rem;
+    margin-bottom: 3rem;
+
+}
+.branding img{
+    border-radius: 15px;
+}
+.team h3{
+    text-align: center;
+    font-size: 2.5rem;
+    margin-top:50px;
+}
+.team p{
+    text-align: center;
+    margin-top:30px;
+    margin-bottom: 50px;
+
+}
+.members{
+    display:flex;
+    justify-content: center;
+}
+.members div{
+    height:390px;
+    width: 280px;
+    margin-right: 15px;
+    background-color: white;
+    box-shadow: 5px 3px 15px #dcdcdc; /* Set box shadow color */
+    text-align: center;
+    border-radius: 7px;
+
+}
+.members img{
+    margin-top: 15px;
+    border-radius: 15px;
+}
+.members div span{
+    position:relative;
+    top:15px;
+}
+.members div p{
+    position:relative;
+    bottom:10px;
+}
+.members div i{
+    position:relative;
+    bottom:50px;
+    margin-right: 13px;
+}
+.pricing{
+    margin-top: 3rem;
+    background-color: whitesmoke;
+}
+.pricing h3{
+    font-size: 2.5rem;
+    text-align: center;
+    padding-top: 2.5rem;
+}
+.pricing p{
+    text-align: center;
+    margin-top:30px;
+    margin-bottom: 50px;
+    
+}
+.plans{
+    display:flex;
+    justify-content: center;
+}
+.plans div{
+    display: flex;
+    height:390px;
+    width: 280px;
+    background-color: white;
+     box-shadow: 5px 3px 15px #dcdcdc;
+    text-align: center;
+    border-radius: 7px;
+}
+.plans .big {
+    width: 350px;
+    height: 460px;
+    border: 4px solid #002962 ; /* Set border color to blue */
+}
+/* .first{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+} */
+
+.head{
+    position:relative;
+    color:rgb(78, 76, 76);
+    padding-left: 110px;
+    font-weight: bold;
+    padding-top: 40px;
+}
+#third{
+    position: relative;
+    padding-left: 80px;
+}
+.faqs{
+    margin-top: 3rem;
+    display:flex;
+}
+.heads{
+    height: 400px;
+    width:400px;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center;
+    align-items: center; */
+}
+.ques{
+    height: 300px;
+    width:600px;
+}
+.heads h2{
+    position: relative;
+    font-size: 35px;
+    font-weight: lighter;
+    margin-left: 50px;
+}
+.heads h1{
+    position: relative;
+    font-size: 40px;
+    margin-left: 50px;
+    margin-top: 6px;
+}
+.heads p{
+    position: relative;
+    margin-top: 10px;
+    margin-left:50px ;
+
+}
+.ques{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    gap:1rem
+}
+.ques select {
+    width: 800px; /* Set your desired width */
+    height: 800px; /* Set your desired height */
+    margin-bottom: 0px; /* Optional: Add some spacing between dropdowns */
+    box-shadow: 5px 3px 15px #dcdcdc;
+    border-color: whitesmoke;
+    margin-left: 50px;
+
+}
+.ques select option value{
+    height:800px;
+}
+.ques select option {
+    padding: 10px; /* Adjust the top and bottom padding as needed */
+  }
+  ooter{
+    background-color: var(--primary-color);
+    /* padding: 4rem 0; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 3rem;
+    padding: 4rem 0;
+    color: white;
+}
+footer .content{
+    align-items: start;
+}
+
+.footer-title{
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+.footer-links{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.site-details-footer{
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+}
+
+.meta-description{
+    opacity: 0.8;
+}
+
+.footer-social-container{
+    display: flex;
+    gap: 1rem;
+    margin-top: 3rem;
+}
+
+.footer-links-address{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    width: 20%;
+
+}
+.footer-links-address .address{
+    opacity: 0.8;
+}
+
+
+.footer-social-container div{
+    
+    height: 40px;
+    width: 40px;
+    border-radius: 100%;
+    background-color: white;
+}
+
+
+
+.copyright{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    gap: 1rem;
+}
+
+
+
+
+
+
+
+
+footer{
+    background-color: #002962;
+}
+  
